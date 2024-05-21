@@ -1,4 +1,4 @@
-
+import {Link, NavLink} from "react-router-dom";
 
 
 const Navbar = () => {
@@ -16,49 +16,11 @@ const Navbar = () => {
                         className="linearicons-magnifier"></i></a>
                 </div>
                 <div className="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav mx-auto">
                         <li className="dropdown">
-                            <a data-toggle="dropdown" className="nav-link dropdown-toggle active"
-                               href="#">Home</a>
-                            <div className="dropdown-menu">
-                                <ul>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="index.html">Fashion 1</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="index-2.html">Fashion 2</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="index-3.html">Furniture 1</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="index-4.html">Furniture 2</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="index-5.html">Electronics 1</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item active"
-                                           href="index-6.html">Electronics 2</a></li>
-                                </ul>
-                            </div>
+                            <NavLink data-toggle="dropdown" className="nav-link" to="/">Home</NavLink>
                         </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle nav-link" href="#"
-                               data-toggle="dropdown">Pages</a>
-                            <div className="dropdown-menu">
-                                <ul>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="about.html">About Us</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="contact.html">Contact Us</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="faq.html">Faq</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item" href="404.html">404
-                                        Error Page</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="login.html">Login</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="signup.html">Register</a></li>
-                                    <li><a className="dropdown-item nav-link nav_item"
-                                           href="term-condition.html">Terms and Conditions</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                        
                         <li className="dropdown dropdown-mega-menu">
                             <a className="dropdown-toggle nav-link" href="#"
                                data-toggle="dropdown">Products</a>
@@ -164,90 +126,7 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className="dropdown">
-                            <a className="dropdown-toggle nav-link" href="#"
-                               data-toggle="dropdown">Blog</a>
-                            <div className="dropdown-menu dropdown-reverse">
-                                <ul>
-                                    <li>
-                                        <a className="dropdown-item menu-link dropdown-toggler"
-                                           href="#">Grids</a>
-                                        <div className="dropdown-menu">
-                                            <ul>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-three-columns.html">3 columns</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-four-columns.html">4 columns</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-left-sidebar.html">Left Sidebar</a>
-                                                </li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-right-sidebar.html">right Sidebar</a>
-                                                </li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-standard-left-sidebar.html">Standard
-                                                    Left Sidebar</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-standard-right-sidebar.html">Standard
-                                                    right Sidebar</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item menu-link dropdown-toggler"
-                                           href="#">Masonry</a>
-                                        <div className="dropdown-menu">
-                                            <ul>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-masonry-three-columns.html">3
-                                                    columns</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-masonry-four-columns.html">4
-                                                    columns</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-masonry-left-sidebar.html">Left
-                                                    Sidebar</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-masonry-right-sidebar.html">right
-                                                    Sidebar</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item menu-link dropdown-toggler"
-                                           href="#">Single Post</a>
-                                        <div className="dropdown-menu">
-                                            <ul>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-single.html">Default</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-single-left-sidebar.html">left
-                                                    sidebar</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-single-slider.html">slider post</a>
-                                                </li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-single-video.html">video post</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-single-audio.html">audio post</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item menu-link dropdown-toggler"
-                                           href="#">List</a>
-                                        <div className="dropdown-menu">
-                                            <ul>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-list-left-sidebar.html">left
-                                                    sidebar</a></li>
-                                                <li><a className="dropdown-item nav-link nav_item"
-                                                       href="blog-list-right-sidebar.html">right
-                                                    sidebar</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <NavLink className="nav-link" to="/blogs">Blog</NavLink>
                         </li>
                         <li className="dropdown dropdown-mega-menu">
                             <a className="dropdown-toggle nav-link" href="#"
@@ -340,7 +219,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li><a className="nav-link nav_item" href="contact.html">Contact Us</a></li>
+                        <li><NavLink className="nav-link nav_item" to="/contact-us">Contact Us</NavLink></li>
                     </ul>
                 </div>
                 <div className="contact_phone contact_support">
