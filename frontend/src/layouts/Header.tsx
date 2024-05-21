@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import {Link} from "react-router-dom";
 
 
 const Header = () => {
@@ -41,9 +42,9 @@ const Header = () => {
                                 <ul className="header_list">
                                     <li><a href="compare.html"><i
                                         className="ti-control-shuffle"></i><span>Compare</span></a></li>
-                                    <li><a href="wishlist.html"><i className="ti-heart"></i><span>Wishlist</span></a>
+                                    <li><Link to="/wishlist"><i className="ti-heart"></i><span>Wishlist</span></Link>
                                     </li>
-                                    <li><a href="login.html"><i className="ti-user"></i><span>Login</span></a></li>
+                                    <li><Link to="/login"><i className="ti-user"></i><span>Login</span></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -53,10 +54,10 @@ const Header = () => {
             <div className="middle-header dark_skin">
                 <div className="container">
                     <div className="nav_block">
-                        <a className="navbar-brand" href="index.html">
+                        <Link className="navbar-brand" to="/">
                             <img className="logo_light" src="assets/images/logo_light.png" alt="logo"/>
                             <img className="logo_dark" src="assets/images/logo_dark.png" alt="logo"/>
-                        </a>
+                        </Link>
                         <div className="product_search_form radius_input search_form_btn">
                             <form>
                                 <div className="input-group">
@@ -251,8 +252,9 @@ const Header = () => {
                                                     </li>
                                                     <li className="mega-menu-col col-lg-5">
                                                         <div className="header-banner2">
-                                                            <a href="#"><img src="assets/images/menu_banner6.jpg"
-                                                                             alt="menu_banner"/></a>
+                                                            <a href="#">
+                                                                <img src="assets/images/menu_banner6.jpg" alt="menu_banner"/>
+                                                            </a>
                                                         </div>
                                                     </li>
                                                 </ul>
